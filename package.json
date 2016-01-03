@@ -1,5 +1,5 @@
 {
-  "name": "url shortener",
+  "name": "urlShortener",
   "version": "1.0.2",
   "main": "server.js",
   "author": "Jonathan Coleman",
@@ -7,6 +7,7 @@
   "dependencies": {
     "dotenv": "^1.2.0",
     "express": "^4.13.3",
-    "mongodb": "^2.0.42"
+    "mongodb": "^2.0.42",
+    "valid-url": "^1.0.9"
   }
 }

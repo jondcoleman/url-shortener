@@ -2,7 +2,7 @@
 
 var express = require('express');
 var mongo = require('mongodb');
-var routes = require('./app/routes/index.js');
+var routes = require('./app/index.js');
 
 var app = express();
 require('dotenv').load();
