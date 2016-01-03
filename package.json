@@ -1,0 +1,12 @@
+{
+  "name": "url shortener",
+  "version": "1.0.2",
+  "main": "server.js",
+  "author": "Jonathan Coleman",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "mongodb": "^2.0.42"
+  }
+}
