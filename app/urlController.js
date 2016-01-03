@@ -23,11 +23,15 @@ function urlHandler (db) {
         }
 
    this.getUrl = function (req, res) {
+     console.log(parseInt(req.params.shortId));
       urls.findOne({_id: parseInt(req.params.shortId)},function (err, result) {
          if (err) {
             throw err;
          } else {
-           res.redirect(result.url);
+           if (result){
+             res.redirect(result.url);
+           }
+            res.send('This short url is not valid');
          }
       });
    };
