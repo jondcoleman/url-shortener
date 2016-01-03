@@ -30,8 +30,9 @@ function urlHandler (db) {
          } else {
            if (result){
              res.redirect(result.url);
+           } else {
+             res.send('This short url is not valid');
            }
-            res.send('This short url is not valid');
          }
       });
    };
